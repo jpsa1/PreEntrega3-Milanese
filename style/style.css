@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* .botones {
+    padding: 8px 08%;
+    margin-top: 8%;
+    font-size: 25px;
+    background-color: white;
+} */
+
+/* Estilo de los botones */
+
+
+
+/* Fuentes descargadas */
+/* @font-face { 
+    font-family: "Mystery Quest"; 
+    src: url("./fonts/mystery-quest.ttf"); 
+} */
+
+/* Evitar el subrayado en los link */
+
+/* Activa la propiedad GRID */
+
+header {
+    display: grid;
+    grid-template-areas:
+    "barraSup barraSup"
+    "logo nav"
+    ;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+}
+
+/* ---- BARRA SUPERIOR  ---- */
+.barraSuperior {
+    grid-area: barraSup;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    background-color: black;
+}
+
+
+.logo {
+    grid-area: logo;
+}
+
+.menu {
+    grid-area: nav;
+}
+
+/* main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+} */
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+/*  ---- MENU ----  */
+.navbar {
+    font-size: 25px;
+}
+
+.logo {
+    padding: 5px;
+}
+
+.menu ul, .menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu ul li{
+    list-style-type: none;
+    padding: 15px;
+    font-size: 25px;
+   
+}
+
+.menu a {
+    color: black;
+}
+
+/*  ---- PORTADA ----  */
+
+
+.portada {
+    position: relative;
+}
+
+.portada img {
+    width: 100%;
+}
+
+.sub-portada {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    background-color: rgba(190, 197, 190, 0.605);
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 2%;
+}
+
+
+h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* ---- SECCION EXPERTOS  ---- */
+.seccion-expertos {
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+.expertos {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding:5% 1% 3%;
+    height: auto;
+    
+}
+
+.seccion-expertos h3 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.expertos h4 {
+    text-align: center;
+    font-size:30px ;
+}
+
+/*  ---- SECCION CONOCE NUESTRA APP ----  */
+
+.nuestraApp div  {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-around;
+   align-items: center;
+   background-color: rgb(150, 195, 236);
+   padding: 5%;
+   
+    
+}
+
+.nuestraApp img {
+    
+    left: 65%;    
+    width: 18%;
+}
+
+.nuestraApp h3 {
+    text-align: center;
+    font-size: 5em;
+    width: 25%;
+}
+
+/*  ---- SECCION CONFIAN EN NOSOTROS ----  */
+
+.confian {
+    position: relative;
+}
+
+.confian img{
+    width: 100%;
+    
+}
+
+.confian2 {
+    position: absolute;
+    top: 10%;
+    padding: 100px 60% 0px 10px;
+    width: 25%;
+    margin-left: 5%;
+}
+
+.confian h3 {
+    font-size: 4rem;
+    color: rgb(22, 66, 22);
+}
+
+
+/*  ---- PIE DE PAGINA ----  */
+
+.pieDePagina {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5em;
+    background-color: gray;
+    position: relative;
+    font-size: 25px;
+     
+}
+
+.pieDePagina div{
+    
+    padding: 15px;
+}
+
+/* ---------------- PAGINA: NOSOTROS ------------------ */
+
+.titulo {
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(199, 199, 199);
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nosotros {
+    padding: 10% 15% 10% 15%;
+    text-align: center;
+}
+
+.nosotros h3 {
+    margin-bottom: 10px;
+    font-size: 3em; 
+}
+
+
+/* ---------------- PAGINA: SERVICIO ------------------ */
+
+.titulo {
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(199, 199, 199);
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+.servicio {
+    padding: 1% 15% 10% 15%;
+    text-align: center;
+}
+
+.servicio h3 {
+    margin-bottom: 10px;
+    font-size: 3em; 
+}
+
+.servicios-cajas {
+    display: flex;
+}
+
+
+/* ---------------- PAGINA: BOLETINES ------------------ */
+
+.titulo {
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(199, 199, 199);
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+
+.boletines {
+    padding: 1% 15% 10% 15%;
+    text-align: center;
+}
+
+.boletines h3 {
+    margin-bottom: 10px;
+    font-size: 3em; 
+}
+
+.boletin-caja {
+    display: flex;
+}
+
+/* ---------------- PAGINA: CONTACTO ------------------ */
+
+.titulo {
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(199, 199, 199);
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.subTitulo {
+    padding: 1% 15% 10% 15%;
+    text-align: center;
+}
+
+.subTitulo h3 {
+    margin-bottom: 10px;
+    font-size: 3em; 
+}
+
+/* Formulario */
+
+.formulario {
+    padding: 10px;
+    background-color: rgb(180, 207, 180);
+}
+
+.formulario input {
+    display: block;
+}
+
+
+
+.imagen-formulario {
+    background-image: url(../Images/Contacto.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 20% 30% 20% 30%;
+}
