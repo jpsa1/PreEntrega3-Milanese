@@ -39,7 +39,7 @@ header {
     grid-area: barraSup;
     text-align: center;
     font-weight: bold;
-    font-size: 30px;
+    
     color: white;
     background-color: black;
 }
@@ -55,13 +55,6 @@ header {
     grid-area: nav;
 }
 
-/* main {
-    grid-area: main;
-}
-
-footer {
-    grid-area: footer;
-} */
 
 
 a {
@@ -118,7 +111,7 @@ a {
     background-color: rgba(190, 197, 190, 0.605);
     text-align: center;
     font-weight: bold;
-    font-size: 30px;
+    
     padding: 2%;
 }
 
@@ -211,7 +204,7 @@ h2{
     height: 5em;
     background-color: gray;
     position: relative;
-    font-size: 25px;
+    
      
 }
 
@@ -359,3 +352,139 @@ h2{
     background-size: contain;
     padding: 20% 30% 20% 30%;
 }
+
+
+
+/* MEDIA QUERY */
+
+/* INDEX */
+
+@media (max-width: 480px) {
+    
+    header {
+        display: grid;
+        grid-template-areas:
+        "barraSup barraSup"
+        "logo logo"
+        "nav nav"
+        ;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+    }
+    
+    /* ---- BARRA SUPERIOR  ---- */
+    .barraSuperior h3 {
+        font-size: 20px;
+        }
+
+    .logo {
+        text-align: center;
+        }
+
+    div.container-fluid {
+        justify-content: right !important;
+    }
+
+    /* Portada */
+    .sub-portada {
+        
+        top: 20%;
+        left: 15%;
+        
+        text-align: center;
+        font-weight: bold;
+        font-size: 10px;
+        padding: 2%;
+    }
+
+    .sub-portada h1 {
+        font-size: 20px;
+    }
+
+    .sub-portada input {
+        font-size: 15px;
+        padding: 2% 3%;
+
+    }
+
+    /* ---- SECCION EXPERTOS  ---- */
+
+    .expertos {
+        flex-direction: column;
+    } 
+
+    .expertos div {
+        text-align:  center;
+    }
+
+    .seccion-expertos h3 {
+        font-size: 30px;
+    }
+
+    .expertos h4 {
+        
+        font-size:25px ;
+    }
+
+/*  ---- SECCION CONOCE NUESTRA APP ----  */
+
+
+ 
+ .nuestraApp img {
+    width: 35%;
+    
+ }
+ 
+ .nuestraApp h3 {
+    text-align: center;
+    font-size: 2em;
+    width: 25%;
+ }
+
+/*  ---- SECCION CONFIAN EN NOSOTROS ----  */
+
+.confian img{
+    width: 110%;
+    
+}
+
+
+.confian2 {
+    top: 0;
+    padding: 5% 50% 0px 10px;
+    margin-left: 5%;
+
+}
+
+.confian h3 {
+    font-size: 2rem;
+    padding-bottom: 2%;
+}
+
+.confian2 input {
+    font-size: 15px;
+    padding: 2% 3%;
+}
+
+/*  ---- PIE DE PAGINA ----  */
+
+.pieDePagina {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding-top: 5%;
+}
+
+/* ---------------- PAGINA: SERVICIO ------------------ */
+
+.servicio h3 {
+    
+    font-size: 2em;
+}
+
+.servicios-cajas {
+    flex-direction: column;
+    text-align:  center;
+}
+
+    }
