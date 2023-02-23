@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
 
 /* .botones {
@@ -32,6 +33,7 @@ header {
     ;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto;
+    background-color: rgb(248,249,250);
 }
 
 /* ---- BARRA SUPERIOR  ---- */
@@ -68,6 +70,7 @@ a {
 /*  ---- MENU ----  */
 .navbar {
     font-size: 25px;
+    
 }
 
 .logo {
@@ -327,7 +330,7 @@ h2{
 }
 
 .subTitulo {
-    padding: 1% 15% 10% 15%;
+    padding: 1% 15% 5% 15%;
     text-align: center;
 }
 
@@ -338,10 +341,36 @@ h2{
 
 /* Formulario */
 
-.formulario {
-    padding: 10px;
+.caja-formulario {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+
     background-color: rgb(180, 207, 180);
 }
+
+.formulario {
+   
+   padding: 5%;
+}
+
+.formulario form label {
+	width:72px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+.formulario form input[type="submit"], .formulario form input[type="button"]  {
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#0d7899;
+} 
 
 .formulario input {
     display: block;
@@ -349,21 +378,19 @@ h2{
 
 
 
-.imagen-formulario {
-    background-image: url(../Images/Contacto.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding: 20% 30% 20% 30%;
+.imagen-contacto {
+    width: 120%;
+    
+    height: auto;
 }
-
+    
 
 
 /* MEDIA QUERY */
 
 /* INDEX */
 
-@media (max-width: 480px) {
+@media screen and (max-width: 600px) {
     
     header {
         display: grid;
@@ -392,8 +419,8 @@ h2{
     /* Portada */
     .sub-portada {
         
-        top: 20%;
-        left: 15%;
+        top: 25%;
+        left: 25%;
         
         text-align: center;
         font-weight: bold;
