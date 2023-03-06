@@ -103,11 +103,11 @@ a {
     position: relative;
 }
 
-.portada img {
+.portada__imagen {
     width: 100%;
 }
 
-.sub-portada {
+.portada2 {
     position: absolute;
     top: 40%;
     left: 35%;
@@ -119,17 +119,17 @@ a {
 }
 
 
-h2{
+.portada2__titulo {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 /* ---- SECCION EXPERTOS  ---- */
-.seccion-expertos {
+.expertos {
     padding-top: 3%;
     padding-bottom: 5%;
 }
 
-.expertos {
+.expertos2 {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
@@ -138,19 +138,19 @@ h2{
     
 }
 
-.seccion-expertos h3 {
+.expertos_titulo {
     text-align: center;
     font-size: 40px;
 }
 
-.expertos h4 {
+.expertos2__subtitulo {
     text-align: center;
     font-size:30px ;
 }
 
 /*  ---- SECCION CONOCE NUESTRA APP ----  */
 
-.nuestraApp div  {
+.nuestraApp2  {
    display: flex;
    flex-flow: row wrap;
    justify-content: space-around;
@@ -161,13 +161,13 @@ h2{
     
 }
 
-.nuestraApp img {
+.nuestraApp2__imagen {
     
     left: 65%;    
     width: 18%;
 }
 
-.nuestraApp h3 {
+.nuestraApp2__titulo {
     text-align: center;
     font-size: 5em;
     width: 25%;
@@ -179,7 +179,7 @@ h2{
     position: relative;
 }
 
-.confian img{
+.confian__imagen{
     width: 100%;
     
 }
@@ -191,7 +191,7 @@ h2{
     margin-left: 5%;
 }
 
-.confian h3 {
+.confian2__titulo {
     font-size: 4rem;
     color: rgb(22, 66, 22);
     padding-bottom: 5%;
@@ -251,21 +251,21 @@ h2{
 }
 
 
-.servicio {
+.servicios {
     padding: 1% 15%;
     text-align: center;
 }
 
-.servicio h3 {
+.servicios2 h3 {
     margin-bottom: 10px;
     font-size: 3em;
 }
 
-.seccion-servicios {
+.servicios {
  padding: 5%;   
 }
 
-.servicios-cajas {
+.servicios2 {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
@@ -273,7 +273,7 @@ h2{
     padding-bottom: 5%;
 }
 
-.servicios-cajas div {
+.servicios2 div {
     text-align: center;
 }
 
@@ -309,7 +309,7 @@ h2{
     padding: 5%;   
    }
    
-   .caja-boletin {
+   .seccion-boletin2 {
        display: flex;
        flex-flow: row nowrap;
        justify-content: space-around;
@@ -350,18 +350,18 @@ h2{
     background-color: rgb(180, 207, 180);
 }
 
-.formulario {
+.caja-formulario2 {
    
    padding: 5%;
 }
 
-.formulario form label {
+.caja-formulario2 form label {
 	width:72px;
 	font-weight:bold;
 	display:inline-block;
 }
 
-.formulario form input[type="submit"], .formulario form input[type="button"]  {
+.caja-formulario2 form input[type="submit"], .caja-formulario2 form input[type="button"]  {
 	width:100%;
 	padding:8px 16px;
 	margin-top:32px;
@@ -372,13 +372,13 @@ h2{
 	background-color:#0d7899;
 } 
 
-.formulario input {
+.caja-formulario2 input {
     display: block;
 }
 
 
 
-.imagen-contacto {
+.caja-formulario2__imagen {
     width: 120%;
     
     height: auto;

@@ -1,0 +1,82 @@
+
+// Tipos de letra
+
+$letra-principal: 'Roboto', sans-serif;
+$letra-secundaria: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+// Background principal
+
+$color-fondo-principal: rgb(248,249,250);
+
+//Resets
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: $letra-principal;
+}
+
+
+
+
+a {
+    text-decoration: none;
+}
+
+//Mixins
+
+@mixin flexbox-centrado {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@mixin titulo-pagina {
+    
+        text-align: center;
+        font-size: 30px;
+        background-color: rgb(199, 199, 199);
+        border-top: solid 2px black;
+        border-bottom: solid 2px black;
+        padding-top: 5px;
+        padding-bottom: 5px;
+}
+
+//Maps
+
+$colores-fondo: (
+    titulos: linear-gradient(rgb(179, 199, 179), gray),
+);
+
+
+//HEADER
+
+.header {
+    background-color: $color-fondo-principal;
+}
+
+// Titulo del resto de las paginas
+.titulo {
+    background-image: map-get($colores-fondo, titulos);
+}
+
+
+
+
+/* ---------------- PAGINA: NOSOTROS ------------------ */
+
+
+
+//Tipos de letras
+
+//Comandos a tener en cuenta en SASS:
+//- Nesting o anidacion
+//- Variables
+//- Operaciones
+//- Import
+//- Maps
+//- Extend
+//- Mixins
+//- partials 
