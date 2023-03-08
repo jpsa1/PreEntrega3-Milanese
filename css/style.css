@@ -4,6 +4,11 @@
   font-family: "Roboto", sans-serif;
 }
 
+p {
+  font-size: 20px;
+  padding: 5px;
+}
+
 a {
   text-decoration: none;
 }
@@ -16,7 +21,6 @@ a {
   background-image: linear-gradient(rgb(179, 199, 179), gray);
 }
 
-/* ---------------- PAGINA: NOSOTROS ------------------ */
 header {
   display: grid;
   grid-template-areas: "barraSup barraSup" "logo nav";
@@ -202,7 +206,7 @@ header {
 .servicios .servicios2 .servicios2__subtitulo {
   margin-bottom: 10px;
   font-size: 2em;
-  padding: 5%;
+  padding: 10px;
 }
 
 .titulo {
@@ -301,10 +305,10 @@ header {
 
 @keyframes un_efecto {
   0% {
-    font-size: 10px;
+    font-size: 25px;
   }
-  66% {
-    font-size: 30px;
+  50% {
+    font-size: 26px;
   }
   100% {
     font-size: 25px;
@@ -314,12 +318,12 @@ header {
   animation-name: un_efecto;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-delay: 0s;
 }
 
 .portada2 {
-  animation-delay: 4s;
+  animation-delay: 3s;
 }
 
 /* MEDIA QUERY */

@@ -16,6 +16,10 @@ $color-fondo-principal: rgb(248,249,250);
     font-family: $letra-principal;
 }
 
+p{
+    font-size: 20px;
+    padding: 5px;
+}
 
 
 
@@ -61,22 +65,3 @@ $colores-fondo: (
 .titulo {
     background-image: map-get($colores-fondo, titulos);
 }
-
-
-
-
-/* ---------------- PAGINA: NOSOTROS ------------------ */
-
-
-
-//Tipos de letras
-
-//Comandos a tener en cuenta en SASS:
-//- Nesting o anidacion
-//- Variables
-//- Operaciones
-//- Import
-//- Maps
-//- Extend
-//- Mixins
-//- partials 
